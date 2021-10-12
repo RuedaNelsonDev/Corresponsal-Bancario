@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarCorresponsal"
+    android:gravity="center"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greenOscuro"
+        android:title="Registrar Corresponsal"
+        android:titleTextColor="@color/white"/>
+    <include
+        android:id="@+id/datosLayout"
+        layout="@layout/fila_datos" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tilCorresNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:helperText="Requerido"
+                app:helperTextTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_usuario"
+                app:startIconTint="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/green">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietCorresNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="textCapCharacters"
+                    android:digits="ABCDEFGHIJKLMNÑOPRSTUVWXYZ"
+                    android:textSize="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/tilCorresApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellido"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:helperText="Requerido"
+                    app:helperTextTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_usuario"
+                    app:startIconTint="@color/green"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietCorresApellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:inputType="textCapCharacters"
+                        android:digits="ABCDEFGHIJKLMNÑOPRSTUVWXYZ"
+                        android:textSize="15dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tilCorresCedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cedula"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:helperText="Requerido"
+                app:helperTextTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_cedula"
+                app:startIconTint="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/green">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietCorresCedula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:digits="0123456789"
+                    android:inputType="number|phone"/>
+            </com.google.android.material.textfield.TextInputLayout><com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tilCorresTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefono o Celular"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:helperText="Requerido"
+            app:helperTextTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_celular"
+            app:startIconTint="@color/green"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietCorresTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:digits="0123456789"
+                android:inputType="number|phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tilCorresDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:helperText="Requerido"
+                app:helperTextTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_direccion"
+                app:startIconTint="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/green">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietCorresDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tilCorresCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:helperText="Requerido"
+                app:helperTextTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/green">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietCorresCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tilCorresContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Contraseña"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:helperText="Requerido"
+                app:helperTextTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_contrasena"
+                app:startIconTint="@color/green"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/green">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietCorresContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tilCorresConfiContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Confirmar Contraseña"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:helperText="Requerido"
+                app:helperTextTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_contrasena"
+                app:startIconTint="@color/green"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/green">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietCorresConfiContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btnCorresRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="30dp"
+                android:text="Registrar Corresponsal"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

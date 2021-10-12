@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lnHistorial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@drawable/custom_card"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvHistorialId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvHistorialFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08/10/2021"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvHistorialHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:21pm"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHistorialFecha" />
+
+            <TextView
+                android:id="@+id/tvHistorialTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:text="Retiro"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/tvHistorialId"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvHistorialValorTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="$ 100000"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/tvHistorialId"
+                app:layout_constraintTop_toBottomOf="@+id/tvHistorialTipo" />
+
+            <TextView
+                android:id="@+id/tvHistorialTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="4 11105552 5225 "
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvHistorialId"
+                app:layout_constraintTop_toBottomOf="@+id/tvHistorialValorTotal" />
+
+            <TextView
+                android:id="@+id/tvHistorialCedulaRemitente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="1005 373 231 "
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvHistorialId"
+                app:layout_constraintTop_toBottomOf="@+id/tvHistorialValorTotal" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

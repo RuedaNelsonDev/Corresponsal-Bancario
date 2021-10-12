@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".clasesCorresponsal.DepositoCorresponsal">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greenOscuro"
+        android:title="Deposito"
+        android:titleTextColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp">
+        <include
+            android:id="@+id/datosLayout"
+            layout="@layout/fila_datos"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="30dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/tilPagoDepositoCedula1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cedula del remitente"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:helperText="Requerido"
+                    app:helperTextTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_cedula"
+                    app:startIconTint="@color/green"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietPagoDepositoCedula1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:digits="0123456789"
+                        android:inputType="number|phone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/tilPagoDepositoCedula2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cedula de cliente receptor"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:helperText="Requerido"
+                    app:helperTextTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_cedula"
+                    app:startIconTint="@color/green"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietPagoDepositoCedula2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:digits="0123456789"
+                        android:inputType="number|phone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/tilPagoDepositoValor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:hint="Valor a depositar"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:helperText="Requerido"
+                    app:helperTextTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_saldo"
+                    app:startIconTint="@color/green"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietPagoDepositoValor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:digits="0123456789"
+                        android:inputType="number|phone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15dp"
+                    android:text="El deposito tendra un cobro adicional por comisión de 1 000 pesos"/>
+                <Button
+                    android:id="@+id/btnPagoDepositoDepositar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginTop="30dp"
+                    android:text="DEPOSITAR"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.corresponsalwpossbank">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CorresponsalWpossBank">
+        <activity
+            android:name=".clasesCorresponsal.TransaccionRechazada"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.TransaccionExitosa"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.MostrarTarjetaCliente"
+            android:exported="true" />
+
+        <activity
+            android:name=".clasesCorresponsal.ConfirmarTransferenciaCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.ConfirmarRetiroCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.ConfirmarTarjetaCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.ConfirmarDepositoCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.ActualizarCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.HistorialCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.CrearClienteCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.ConsultarSaldoCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.TransferenciaCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.DepositoCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.RetiroCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".clasesCorresponsal.PagoTarjetaCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".MostrarCuenta"
+            android:exported="true" />
+        <activity
+            android:name=".MostrarTarjeta"
+            android:exported="true" />
+        <activity
+            android:name=".EstadoCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".EstadoCliente"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarCliente"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".MostrarCliente"
+            android:exported="true" />
+        <activity
+            android:name=".MostrarCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".MenuAdministrador"
+            android:exported="true" />
+        <activity
+            android:name=".MenuCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

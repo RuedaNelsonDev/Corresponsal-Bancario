@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".clasesCorresponsal.ActualizarCorresponsal">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greenOscuro"
+        android:title="Actualizar Corresponsal"
+        android:titleTextColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/datosLayout"
+            layout="@layout/fila_datos" />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tilActualizarCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:helperText="Requerido"
+            app:helperTextTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/green"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietActualizarCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tilActualizarContrasenaActual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Contraseña"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:helperText="Requerido"
+            app:helperTextTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_contrasena"
+            app:startIconTint="@color/green"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietActualizarContrasenaActual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tilActualizarContrasenaNUeva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Confirmar Contraseña"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:helperText="Requerido"
+            app:helperTextTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_contrasena"
+            app:startIconTint="@color/green"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietActualizarContrasenaNueva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tilActualizarConfiContrasenaNeva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Confirmar Contraseña"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:helperText="Requerido"
+            app:helperTextTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_contrasena"
+            app:startIconTint="@color/green"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietActualizarConfiContrasenaNeva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btnCorresActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="30dp"
+            android:text="Actualizar Corresponsal"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>

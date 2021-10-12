@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".clasesCorresponsal.RetiroCorresponsal">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greenOscuro"
+        android:title="Retiro"
+        android:titleTextColor="@color/white"/>
+    <include
+        android:id="@+id/datosLayout"
+        layout="@layout/fila_datos"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_vertical">
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/tilPagoRetiroCedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cedula de cliente"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:helperText="Requerido"
+        app:helperTextTextColor="@color/white"
+        app:startIconDrawable="@drawable/ic_cedula"
+        app:startIconTint="@color/green"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPagoRetiroCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:digits="0123456789"
+            android:inputType="number|phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/tilPagoRetiroPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Pin"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:helperText="Requerido"
+        app:helperTextTextColor="@color/white"
+        app:startIconDrawable="@drawable/ic_contrasena"
+        app:startIconTint="@color/green"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPagoRetiroPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:inputType="numberPassword"
+            android:digits="0123456789"
+            android:maxLength="4"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/tilPagoRetiroConfiPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Confirmar Pin"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:helperText="Requerido"
+        app:helperTextTextColor="@color/white"
+        app:startIconDrawable="@drawable/ic_contrasena"
+        app:startIconTint="@color/green"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPagoRetiroConfiPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:inputType="numberPassword"
+            android:digits="0123456789"
+            android:maxLength="4"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:text="El valor del retiro tiene un cobro adicional de 2mil pesos"/>
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/tilPagoRetiroValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Valor a retirar"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:helperText="Requerido"
+        app:helperTextTextColor="@color/white"
+        app:startIconDrawable="@drawable/ic_saldo"
+        app:startIconTint="@color/green"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPagoRetiroValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:digits="0123456789"
+            android:inputType="number|phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnPagoRetiroRetirar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="30dp"
+        android:inputType="number|phone"
+        android:text="Retirar"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
+</LinearLayout>
